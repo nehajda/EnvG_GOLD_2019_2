@@ -1,5 +1,5 @@
 !service-definition-v1
-name: TMA-2019.1.0
+name: TMA-2019.2.0
 description: TMA
 requests:
 - 'GS1:TransferOrder:GS1_JDA 2019.1.0'
