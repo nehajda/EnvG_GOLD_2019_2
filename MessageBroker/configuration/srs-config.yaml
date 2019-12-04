@@ -40,10 +40,11 @@ outboundEndpoints:
       value: "MB-ACK"
 - name: OMS
   flow:
-    name: jmsOutboundFlow
+    name: jmsOMSOutboundFlow
     parameters:
     - name: "queue"
       value: "MB-OMS"
+  interceptorFlow: OMSCustomFlow  
 outboundMappings:
   - receiver: 'HOST.GLOBAL'
     request: '*:*:*'
