@@ -42,17 +42,11 @@
     <code key="DETAIL_LEVEL" value="SPLIT_METHOD_DETL_LVL"/>
     <code key="NO_SPLIT" value="SPLIT_METHOD_NONE"/>
   </code-map>
-  <code-map name="TransportServiceLevelCodeFromAppToGS1">
+  <code-map name="TransportServiceLevelCode" bi-directional="true">
     <code key="3DAY" value="THREE_DAY_SERVICE"/>
     <code key="GROUND" value="GROUND"/>
     <code key="OVERNIGHT" value="NEXT_DAY_AIR"/>
     <code key="FTL" value="NEXT_MORNING"/>
-  </code-map>
-  <code-map name="TransportServiceLevelCodeFromGS1ToApp">
-    <code key="THREE_DAY_SERVICE" value="3DAY"/>
-    <code key="GROUND" value="GROUND"/>
-    <code key="NEXT_DAY_AIR" value="OVERNIGHT"/>
-    <code key="NEXT_MORNING" value="FTL"/>
   </code-map>
   <code-map name="TransportServiceCategoryCodeFromAppToGS1">
     <code key="TSM_RAIL" value="20"/>
