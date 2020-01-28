@@ -37,7 +37,14 @@ outboundEndpoints:
     name: jmsOutboundFlow
     parameters:
     - name: "queue"
-      value: "MB-ACK" 
+      value: "MB-ACK"
+- name: OMS
+  flow:
+    name: jmsOMSOutboundFlow
+    parameters:
+    - name: "queue"
+      value: "MB-OMS"
+  interceptorFlow: OMSCustomFlow  
 outboundMappings:
   - receiver: 'HOST.GLOBAL'
     request: '*:*:*'
@@ -165,6 +172,9 @@ outboundMappings:
   - receiver: 'LOC.PALLET-ESTIMATOR'
     request: '*:*:*'
     outboundEndpoint: 'PALLETESTIMATOR-Q'
+  - receiver: 'OMS.GLOBAL'
+    request: '*:*:*'
+    outboundEndpoint: 'OMS'
   - receiver: 'ACK.GLOBAL'
     request: '*:*:*'
     outboundEndpoint: 'ACK'
