@@ -26,12 +26,12 @@ outboundEndpoints:
     parameters:
     - name: "queue"
       value: "MB-TMA"
-- name: WMA
+- name: WMS
   flow:
     name: jmsOutboundFlow
     parameters:
     - name: "queue"
-      value: "MB-WMA"
+      value: "MB-WMS"
 - name: ACK
   flow:
     name: jmsOutboundFlow
@@ -54,10 +54,10 @@ outboundMappings:
     outboundEndpoint: 'TMA'
   - receiver: 'WMA.WEST|WMA.EAST'
     request: '*:*:*'
-    outboundEndpoint: 'WMA'
+    outboundEndpoint: 'WMS'
   - receiver: 'LOC.DC0001'
     request: '*:*:*'
-    outboundEndpoint: 'WMA'
+    outboundEndpoint: 'WMS'
   - receiver: 'LOC.V0001'
     request: '*:*:*'
     outboundEndpoint: 'WMA'
@@ -72,13 +72,13 @@ outboundMappings:
     outboundEndpoint: 'WMA'    
   - receiver: 'LOC.DC0002'
     request: '*:*:*'
-    outboundEndpoint: 'WMA'
+    outboundEndpoint: 'WMS'
   - receiver: 'LOC.DC1001'
     request: '*:*:*'
-    outboundEndpoint: 'WMA'
+    outboundEndpoint: 'WMS'
   - receiver: 'LOC.DC1002'
     request: '*:*:*'
-    outboundEndpoint: 'WMA'
+    outboundEndpoint: 'WMS'
   - receiver: 'LOC.DC1003'
     request: '*:*:*'
     outboundEndpoint: 'WMA'
