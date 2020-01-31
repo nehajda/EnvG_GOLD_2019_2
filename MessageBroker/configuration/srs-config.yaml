@@ -26,12 +26,12 @@ outboundEndpoints:
     parameters:
     - name: "queue"
       value: "MB-TMA"
-- name: WMS
+- name: WMA
   flow:
     name: jmsOutboundFlow
     parameters:
     - name: "queue"
-      value: "MB-WMS"
+      value: "MB-WMA"
 - name: ACK
   flow:
     name: jmsOutboundFlow
@@ -54,19 +54,49 @@ outboundMappings:
     outboundEndpoint: 'TMA'
   - receiver: 'WMA.WEST|WMA.EAST'
     request: '*:*:*'
-    outboundEndpoint: 'WMS'
+    outboundEndpoint: 'WMA'
   - receiver: 'LOC.DC0001'
     request: '*:*:*'
-    outboundEndpoint: 'WMS'  
+    outboundEndpoint: 'WMA'
+  - receiver: 'LOC.V0001'
+    request: '*:*:*'
+    outboundEndpoint: 'WMA'
+  - receiver: 'LOC.V0002'
+    request: '*:*:*'
+    outboundEndpoint: 'WMA'
+  - receiver: 'LOC.DICKS'
+    request: '*:*:*'
+    outboundEndpoint: 'WMA'
+  - receiver: 'LOC.CAR-CON3'
+    request: '*:*:*'
+    outboundEndpoint: 'WMA'    
   - receiver: 'LOC.DC0002'
     request: '*:*:*'
-    outboundEndpoint: 'WMS'
+    outboundEndpoint: 'WMA'
   - receiver: 'LOC.DC1001'
     request: '*:*:*'
-    outboundEndpoint: 'WMS'
+    outboundEndpoint: 'WMA'
   - receiver: 'LOC.DC1002'
     request: '*:*:*'
-    outboundEndpoint: 'WMS'
+    outboundEndpoint: 'WMA'
+  - receiver: 'LOC.DC1003'
+    request: '*:*:*'
+    outboundEndpoint: 'WMA'
+  - receiver: 'LOC.E1200'
+    request: '*:*:*'
+    outboundEndpoint: 'WMA'
+  - receiver: 'LOC.CAR-CON3'
+    request: '*:*:*'
+    outboundEndpoint: 'WMA'
+  - receiver: 'LOC.DC1004'
+    request: '*:*:*'
+    outboundEndpoint: 'WMA'
+  - receiver: 'LOC.DC1005'
+    request: '*:*:*'
+    outboundEndpoint: 'WMA'
+  - receiver: 'LOC.DC1006'
+    request: '*:*:*'
+    outboundEndpoint: 'WMA'
   - receiver: 'LOC.S0001'
     request: '*:*:*'
     outboundEndpoint: 'STR'
