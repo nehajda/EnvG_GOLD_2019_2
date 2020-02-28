@@ -34,14 +34,5 @@ eframework:
     title: SRS Error Report
     htmlTemplatePath: errorReportTemplate.html
     payload.transaction.size: 2048
-cps:
-  useCps: "true"  # if false then CPS is not called and files are loaded locally
-  cpsBaseUrl: "https://in2npdvjdacon02.dev.corp.local:9810"
-  applicationName: “ServicesRegistry”
-  profiles: "*"
-  version: "*"
-  localMode: "false"
-  localModePath: ""
-  enableCaching: "false"
-  enableFailover: "false"
-  cachingDir: ""  
+
+  

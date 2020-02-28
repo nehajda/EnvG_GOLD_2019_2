@@ -1,21 +1,17 @@
 !srs-configuration-v1
 receiverMappings:
-- receiver: 'TMS.GLOBAL'
-  service: 'TMA'
-- receiver: 'HOST.GLOBAL'
-  service: 'HOST.GLOBAL'
-- receiver: 'OMS.GLOBAL'
-  service: 'OMS.GLOBAL'
-- receiver: 'ACK.*'
-  service: 'ACK.GLOBAL'
-- receiver: 'LOC.*'
-  service: 'WMA'
-  
+- receiver: 'WMA.WEST.2'
+  service: 'WMA.WEST'
+  enabled: false
+- receiver: 'WMA.WEST.*'
+  service: 'WMA.WEST'
 jmbs:
 - JMB1
 services:
-- TMA
-- HOST.GLOBAL
-- OMS.GLOBAL
-- ACK.GLOBAL
-- WMA
+- TMA.GLOBAL
+- WMA.EAST
+- WMA.WEST
+- WMA.SOUTH
+- AUDIT
+
+

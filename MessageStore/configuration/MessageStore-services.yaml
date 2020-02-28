@@ -15,7 +15,7 @@ services:
     type: TMA
     # overridden Replay Policy
     replayPolicy:
-      maxRetries: 5
+      maxRetries: -1
       retryIntervalMins: 10 
       retryIntervalMultiplier: 0.5
       maxRetryIntervalMins : 60
@@ -25,24 +25,24 @@ services:
         #configType: https
         https:
           port: "9930"
-          host: "in2npdvjdacon02"
+          host: "0.0.0.0"
         http:    
           port: "9931"
-          host: "in2npdvjdacon02"
+          host: "0.0.0.0"
         path: /replayEndpoint
-        basePath: /v3
+        basePath: /v2
       
-  WMA:
+  WMA-GLOBAL:
     type: WMA
     replay:
       request:
-        #configType: https
-        configType: http
+        configType: https
+        #configType: http
         https:
-          port: "9932"
-          host: "in2npdvjdacon02"
+          port: "9930"
+          host: "0.0.0.0"
         http:    
-          port: "9933"
-          host: "in2npdvjdacon02"
+          port: "9831"
+          host: "0.0.0.0"
         path: /replayEndpoint
         basePath: /v2

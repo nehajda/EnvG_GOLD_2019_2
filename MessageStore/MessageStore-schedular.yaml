@@ -1,4 +1,4 @@
 # Properties relating to Schedular
 Schedular:
-  frequencyInMillis: "30000"
+  frequencyInMillis: "600000"
 

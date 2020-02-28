@@ -5,6 +5,7 @@ MSDatabase:
   driverClassName: "oracle.jdbc.driver.OracleDriver"
   user: "MSGSTR_GOLD_02"
   password: "MSGSTR_GOLD_02"
+   
         
   connection:
     maxPoolSize: "30"
