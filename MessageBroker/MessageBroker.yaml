@@ -13,8 +13,8 @@ mb:
     traceMessage:
       enabled: "false"
   gs1ack:
-    generateAckError: "true"
-    generateAckSuccess: "true"
+    generateAckError: "false"
+    generateAckSuccess: "false"
     globalReceiverFlag: "false"
     globalReceiverName: "ACK.GLOBAL"
   #The entryTtl for Idempotent Message Validator should be greater then the expirationInterval
