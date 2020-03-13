@@ -20,7 +20,9 @@ inbound:
   - message: 'GS1:warehousingOutboundNotificationMessage:GS1_JDA 2019.1.1'
     flow: 'flow-in-GS1-warehousingOutboundNotificationMessage'
   - message: 'GS1:warehousingOutboundNotificationMessage:GS1_JDA 2020.1.0'
-    flow: 'flow-in-GS1-warehousingOutboundNotificationMessage'
+    flow: 'flow-in-GS1-warehousingOutboundNotificationMessage
+  - message: 'GS1:warehousingOutboundInstructionMessage:GS1_JDA 2020.1.0'
+    flow: 'flow-in-GS1-warehousingOutboundInstructionMessage'
   - message: 'GS1:warehousingOutboundInstructionMessage:GS1_JDA 2019.1.1'
     flow: 'flow-in-GS1-warehousingOutboundInstructionMessage'
   - message: 'GS1:warehousingOutboundInstructionMessage:GS1_JDA 2019.1.0'
