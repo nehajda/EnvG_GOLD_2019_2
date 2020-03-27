@@ -2,12 +2,6 @@
 
 name: JMB1
 outboundEndpoints:
-- name: PALLETESTIMATOR-Q
-  flow:
-    name: jmsOutboundFlow
-    parameters:
-    - name: "queue"
-      value: "MB-PALLETESTIMATOR"
 - name: HOST
   flow:
     name: jmsOutboundFlow
@@ -26,12 +20,6 @@ outboundEndpoints:
     parameters:
     - name: "queue"
       value: "MB-WMA"
-- name: ACK
-  flow:
-    name: jmsOutboundFlow
-    parameters:
-    - name: "queue"
-      value: "MB-ACK"
 - name: OMS
   flow:
     name: jmsOutboundFlow
@@ -90,12 +78,6 @@ outboundMappings:
   - receiver: 'LOC.DC1006'
     request: '*:*:*'
     outboundEndpoint: 'WMA'
-  - receiver: 'LOC.PALLET-ESTIMATOR'
-    request: '*:*:*'
-    outboundEndpoint: 'PALLETESTIMATOR-Q'
   - receiver: 'OMS.GLOBAL'
     request: '*:*:*'
     outboundEndpoint: 'OMS'
-  - receiver: 'ACK.GLOBAL'
-    request: '*:*:*'
-    outboundEndpoint: 'ACK'
