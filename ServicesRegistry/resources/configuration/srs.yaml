@@ -17,6 +17,6 @@ services:
 - HOST.GLOBAL
 - OMS.GLOBAL
 - ACK.GLOBAL
-- WMA 
+- WMA
 
 

@@ -30,7 +30,6 @@ server:
 
 # ---------------------------------------------------------------------------------------------------------
 # Outbound Endpoint Properties
-# Outbound Endpoint Properties
 # JMS inbound endpoint
 jmsInbound:
   queue:
@@ -56,7 +55,7 @@ jmsOutbound:
     redeliveryDelay: "20000"
     sessionCacheSize: "100"
     maximumRedeliveries: "5"
-    
+
 # ---------------------------------------------------------------------------------------------------------
 # Interceptor Properties
 
