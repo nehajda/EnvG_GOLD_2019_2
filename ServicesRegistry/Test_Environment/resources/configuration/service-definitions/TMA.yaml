@@ -1,5 +1,5 @@
 !service-definition-v1
-name: TMA-2020.1.0
+name: TMA
 description: TMA
 requests:
 - 'GS1:TransferOrder:GS1_JDA 2019.1.0'
@@ -24,5 +24,7 @@ requests:
 - 'GS1:locationMessage:GS1_JDA 2017.2.0'
 - 'GS1:partyMessage:GS1_JDA 2017.2.0'
 - 'GS1:itemMessage:GS1_JDA 2017.2.0'
+- 'GS1:partyMessage:GS1_JDA 2019.1.1'
+- 'GS1:itemMessage:GS1_JDA 2020.1.0'
 - 'GS1:locationMessage:GS1_JDA 2019.1.1'
 - 'GS1:itemMessage:GS1_JDA 2019.1.1'
