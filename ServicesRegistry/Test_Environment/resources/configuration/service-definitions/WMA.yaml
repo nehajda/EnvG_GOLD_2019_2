@@ -9,7 +9,6 @@ requests:
 - 'GS1:PurchaseOrder:GS1_JDA 2019.1.0'
 - 'GS1:PurchaseOrder:GS1_JDA 2017.2.0'
 - 'GS1:ReturnOrder:GS1_JDA 2017.2.0'
-- 'GS1:transportLoadMessage:GS1_JDA 2020.1.0'
 - 'GS1:transportLoadMessage:GS1_JDA 2019.1.1'
 - 'GS1:transportLoadMessage:GS1_JDA 2019.1.0'
 - 'GS1:transportLoadMessage:GS1_JDA 2017.2.0'
