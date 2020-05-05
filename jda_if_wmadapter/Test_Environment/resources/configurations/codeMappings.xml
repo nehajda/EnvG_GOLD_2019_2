@@ -41,7 +41,7 @@
 		<code key="BLOCKED" value="S" />
    </code-map>
    <code-map name="InventoryStatusType" bi-directional="true">
-		<code key="ON_HAND" value="A" />
+		<code key="AVAILABLE_FOR_SALE" value="A" />
 		<code key="CRITICAL_HOLD" value="C" />
 		<code key="DAMAGED" value="D" />
 		<code key="EXPIRED_PRODUCT" value="E" />
