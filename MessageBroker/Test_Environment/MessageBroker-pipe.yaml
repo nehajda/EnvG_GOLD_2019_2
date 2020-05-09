@@ -7,7 +7,7 @@ mb:
 
 #Message Broker JMS Queue with AcitveMQ Properties
     jms:
-      #queueName: "MB_PIPE"
+      queueName: "MB_PIPE"
       brokerURL: "failover://tcp://in2npdvjdacon02:61616"
       maxConnections: "30"
       concurrentConsumers: "30"
