@@ -16,25 +16,15 @@ server:
     tls:
       keyStore:
         path: "keystore.jks"
-        password-secure: "changeme"
         key:
-          password-secure: "changeme"
       trustStore:
         path: "truststore.jks"
-        password-secure: "changeme"
         
   request:
     replay:
       tls:
         keyStore:
           path: "keystore.jks"
-          password-secure: "changeme"
           key:
-            password-secure: "changeme"
         trustStore:  
           path: "truststore.jks"
-          password-secure: "changeme"    
-        
-
-    
-  
