@@ -3,10 +3,7 @@
 MSDatabase:
   url: "jdbc:oracle:thin:@in2npdlnxdb10:1521:if19ca"
   driverClassName: "oracle.jdbc.driver.OracleDriver"
-  user: "MSGSTR_GOLD_02"
-  password: "MSGSTR_GOLD_02"
-   
-        
+           
   connection:
     maxPoolSize: "30"
     minPoolSize: "10"
