@@ -16,12 +16,12 @@ server:
     tls:
       keyStore:
         path: "keystore.jks"
-        password-secure: "changeme"
+        
         key:
-          password-secure: "changeme"
+          
       trustStore:
         path: "truststore.jks"
-        password-secure: "changeme"     
+             
   http:
     host: "0.0.0.0"
     port: "9911"
