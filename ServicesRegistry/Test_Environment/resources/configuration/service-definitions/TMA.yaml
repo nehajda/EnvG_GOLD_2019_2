@@ -61,6 +61,8 @@ inbound:
     flow: 'flow-in-GS1-itemMessage'
   - message: 'GS1:transportInstructionMessage:GS1_JDA 2019.1.1'
     flow: 'flow-in-GS1-TransportInstruction'
+  - message: 'GS1:nativeTmsMessage:GS1_JDA 2020.1.0'
+    flow: 'flow-in-GS1-NativeMessage'
 outbound:
   responses:
   - message: 'GS1:transportInstructionMessage:GS1_JDA 2017.2.0'
