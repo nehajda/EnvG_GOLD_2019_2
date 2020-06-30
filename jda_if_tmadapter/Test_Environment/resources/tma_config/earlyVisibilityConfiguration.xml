@@ -156,6 +156,21 @@
 				<EventName>LoadCanceled</EventName>
 				<DocumentOperationCode>DELETE</DocumentOperationCode>
 			</VisibilityOption>
+			<VisibilityOption>
+				<CurrentLoadStatus>S_TENDER_ACCEPTED</CurrentLoadStatus>
+				<EventName>OptimizerQueueEvent</EventName>
+				<DocumentOperationCode>CHANGE_BY_REFRESH</DocumentOperationCode>
+			</VisibilityOption>
+			<VisibilityOption>
+				<CurrentLoadStatus>S_TENDERED</CurrentLoadStatus>
+				<EventName>OptimizerQueueEvent</EventName>
+				<DocumentOperationCode>CHANGE_BY_REFRESH</DocumentOperationCode>
+			</VisibilityOption>
+			<VisibilityOption>
+				<CurrentLoadStatus>S_PLANNED</CurrentLoadStatus>
+				<EventName>OptimizerQueueEvent</EventName>
+				<DocumentOperationCode>ADD</DocumentOperationCode>
+			</VisibilityOption>
         </EarlyVisibilityOption>
 		
 		<!-- EarlyVisibilityOption for load status: Tendered-->	
@@ -260,6 +275,16 @@
 				<EventName>ShipmentLegRemovedFromLoad</EventName>
 				<DocumentOperationCode>DELETE</DocumentOperationCode>
 			</VisibilityOption>
+			<VisibilityOption>
+				<CurrentLoadStatus>S_TENDER_ACCEPTED</CurrentLoadStatus>
+				<EventName>OptimizerQueueEvent</EventName>
+				<DocumentOperationCode>CHANGE_BY_REFRESH</DocumentOperationCode>
+			</VisibilityOption>
+			<VisibilityOption>
+				<CurrentLoadStatus>S_TENDERED</CurrentLoadStatus>
+				<EventName>OptimizerQueueEvent</EventName>
+				<DocumentOperationCode>CHANGE_BY_REFRESH</DocumentOperationCode>
+			</VisibilityOption>
         </EarlyVisibilityOption>
 		
 		
@@ -344,6 +369,11 @@
 				<CurrentLoadStatus>S_OPEN</CurrentLoadStatus>
 				<EventName>ShipmentLegRemovedFromLoad</EventName>
 				<DocumentOperationCode>DELETE</DocumentOperationCode>
+			</VisibilityOption>
+			<VisibilityOption>
+				<CurrentLoadStatus>S_TENDER_ACCEPTED</CurrentLoadStatus>
+				<EventName>OptimizerQueueEvent</EventName>
+				<DocumentOperationCode>CHANGE_BY_REFRESH</DocumentOperationCode>
 			</VisibilityOption>
         </EarlyVisibilityOption>	    
     </EarlyVisibilityOptions>
